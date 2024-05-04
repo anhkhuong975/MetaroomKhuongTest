@@ -14,7 +14,7 @@ To create an interactive landing page for a pipe management company with three m
 - Copy file `.env.example` to `.env`. If you don't do it, the application will run with default env:
   - PORT: 8888
   - VITE_GOOGLE_API: <empty>
-- `VITE_GOOGLE_API`: Need to create an API key for an account that already has a payment method. This field can be left blank, but when viewing the map it will be limited to the developer version
+- `VITE_GOOGLE_API`: Need to create an API key for an account that already has a payment method. This field can be left blank, but when viewing the map it will be limited to the developer version (maybe show the error message: `This page can't load Google Maps correctly.`)
 
 ## Mock data:
 - `src/data`
@@ -23,30 +23,32 @@ To create an interactive landing page for a pipe management company with three m
 - USING `yarn` : 
   - `yarn install`
   - `yarn run dev`
+  - PORT DEFAULT: `8888`
 
-## Run production (DOCKER)
+## Run production (PORT: 8080)
 - Using `docker compose`:
   - `docker-compose up -d --build`
+  - PORT: `8080`
 
 ## List of Things Done
-- Layout component: (`src/components/layout`) (1 hour)
-- Util components: (`src/components/utils`) (4 hours)
-  - `Button`
-  - `Card`
-  - `Dialog`
-  - `GoogleMap`
-  - `Textarea`
-- Page: (`src/pages/home`) (0.5 hour)
-  - `Home`
-- Home components: (`src/components/home`) (6 hours)
-  - `GoalDialog`
-  - `PipeInformation`
-  - `PipeMapDailog`
+- Init source, layout: (1.5 hour)
+- Util components: (`src/components/utils`)
+  - `Button` (0.5 hour)
+  - `Card` (0.5 hour)
+  - `Dialog` (0.75 hour)
+  - `GoogleMap` (2 hours)
+  - `Textarea` (0.5 hour)
+- Page: (`src/pages/home`) 
+  - `Home` (1 hour)
+- Home components: (`src/components/home`)
+  - `GoalDialog` (2 hours)
+  - `PipeInformation` (0.5 hour)
+  - `PipeMapDailog` (1 hour)
   - `SectionCards`: 
-    - `GoalCard`
-    - `PipeMapCard`
-    - `WhatUpCard`
-- Init Dockerfile, docker compose (0.5 hour)
+    - `GoalCard` (0.5 hour)
+    - `PipeMapCard` (0.5 hour)
+    - `WhatUpCard` (0.25 hour)
+- Init Dockerfile, docker compose, deploy (1 hour)
 - Readme, create git repository (0.5 hour)
 
-## Working time: `12.5 hours`
+## Working time: `13.5 hours`

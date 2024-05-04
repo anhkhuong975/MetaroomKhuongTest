@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web-app:
-    container_name: pipe_management_webapp
+    container_name: p_m_webapp
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,11 +10,3 @@ services:
         - NODE_ENV=production
     ports:
       - "8080:80"
-
-  nginx:
-    image: nginx:stable-alpine
-    container_name: pipe_management_nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - web-app
