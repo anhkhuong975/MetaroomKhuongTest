@@ -1,6 +1,10 @@
 # Basic UI Development for Pipe Management Company Landing Page 
 To create an interactive landing page for a pipe management company with three main sections: Map, What's Up, and Goal. The goal is to provide a basic UI that can be easily adjusted later once the official design is completed.
 
+## LIVE DEMO:
+- Built by Docker compose (on my VPS): https://metaroom.cookcookie.site/
+- Built by Vercel provider: https://metaroom-khuong-test.vercel.app/
+
 ## Brief overview of the technology used
 
 - [Perrier](https://www.npmjs.com/package/prettier) an opinionated code formatter
