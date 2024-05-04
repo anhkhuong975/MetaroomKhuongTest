@@ -1,6 +1,7 @@
 <template>
   <Card
     class="flex-1 border-8 rounded-none border-white shadow-none text-pink-500 p-0 cursor-pointer"
+    title="News updates related to construction or relevant statistics"
   >
     <div class="relative h-full w-full group overflow-hidden">
       <div

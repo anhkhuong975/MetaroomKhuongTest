@@ -8,7 +8,7 @@ export default ({ mode }) => {
     plugins: [vue()],
 
     server: {
-      port: parseInt(process.env.VITE_PORT),
+      port: parseInt(process.env.VITE_PORT) || 8888,
     },
   });
 };

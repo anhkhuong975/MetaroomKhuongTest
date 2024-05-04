@@ -11,6 +11,7 @@
       <div
         class="absolute bg-purple-500 w-full h-full translate-y-full bottom-0 transition-all group-hover:bottom-full flex gap-3 flex-col justify-between"
         @click="this.$emit('click')"
+        title="List of goals set for the current year"
       >
         <div class="space-y-3">
           <div class="text-white font-bold text-lg md:text-xl px-3">

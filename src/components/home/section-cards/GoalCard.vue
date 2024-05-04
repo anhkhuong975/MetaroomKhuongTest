@@ -2,6 +2,7 @@
   <Card
     class="flex-1 border-8 rounded-none border-white shadow-none text-pink-500 p-0 cursor-pointer"
     @click="this.$emit('click')"
+    title="The location of pipe construction areas or managed pipe systems"
   >
     <div class="relative h-full w-full group overflow-hidden">
       <div
